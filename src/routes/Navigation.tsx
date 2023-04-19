@@ -9,9 +9,6 @@ import {
 import logo from '../../public/logo.svg'
 import { ShoppingPage } from '../02-component-patterns/pages/ShoppingPage';
 
-
-
-
 export const Navigation = () => {
     return (
         <BrowserRouter>
@@ -37,12 +34,7 @@ export const Navigation = () => {
                     <Route path='home' element={<ShoppingPage />} />
 
                     <Route path='/*' element={<Navigate to="/home" replace />} />
-
-
-
                 </Routes>
-
-
             </div>
         </BrowserRouter>
 
